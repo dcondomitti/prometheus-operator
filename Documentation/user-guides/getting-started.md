@@ -78,6 +78,10 @@ rules:
   resources:
   - namespaces
   verbs: ["list"]
+- apiGroups: [""]
+  resources:
+  - serviceaccounts
+  verbs: ["get", "list"]
 ---
 apiVersion: v1
 kind: ServiceAccount
